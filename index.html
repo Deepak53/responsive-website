@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content="width=device-width">
+        <meta >
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <title>My landing page</title>
+    </head>
+    <body>
+        <!-- navbar start -->
+        <div class="wrapper">
+       <header>
+
+         <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/as.jpg" alt="" height="40px" width="40px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ms-auto">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#about">About Us</a>
+                <a class="nav-link" href="#services">Our Services</a>
+                <a class="nav-link" href="#contact">Contact Us</a>
+               
+              </div>
+            </div>
+          </div>
+        </nav>
+       </header>
+       <br>
+       <main>
+         <div class="cover">
+          <div class="main-container">
+            <div class="left">
+             <h1 class="text">
+               BUSSINESS LANDING PAGE
+             </h1>
+            </div>
+            <div class="right">
+              <img src="images/pic.jpg" alt="" width="200px" height="200px" class="img-1">
+            </div>
+          </div>
+          
+         </div>
+
+         <!-- About us -->
+         <div class="about" id="about">
+           <div class="left-about">
+             <img src="images/pic.jpg" alt="" class="about-img">
+           </div>
+           <div class="right-about">
+             <h4 class="about-text">About Us</h4>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim cumque cum fuga vel quo fugit quas asperiores? Ducimus fuga, sint maiores facere expedita, aut, aperiam mollitia perferendis at pariatur aliquam!</p></div>
+         </div>
+
+         <!-- card section -->
+       <div class="services" id="services">
+        <h4 class="title">Our Services</h4>
+        <div class="card-container">
+          <!-- row display-flex row-cols-1 row-cols-md-3 g-4 -->
+          <div class="row row-cols-1 row-cols-md-3 g-4 ">
+            <div class="col">
+              <div class="card w-40">
+                <div class="card-body">
+                  <h5 class="card-title">Service 1</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit . Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos corrupti adipisci repellat odio veritatis soluta, tempore aut sunt vitae suscipit consequuntur consectetur nam, ut eum blanditiis in placeat similique quas.</longer></p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card w-40">
+                <div class="card-body">
+                  <h5 class="card-title">Service 2</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis libero quaerat nihil, explicabo nulla at delectus quae quasi laborum ullam sed eveniet minima fugit numquam totam incidunt voluptatem nam? Distinctio.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col ">
+              <div class="card w-40 ">
+                <div class="card-body">
+                  <h5 class="card-title">Service 3</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+       </main>
+
+       <footer>
+         <div class="footer">
+           <div class="contact" id="contact">
+             <h4>Contact Us</h4>
+             <form class="contact-us">
+              <input type="text"class="input" id="fname" name="firstname" placeholder="Full Name" required="true"><br><br>
+              <input type="text"class="input" id="lname" name="" placeholder="Last Name"><br><br>
+              <input type="Email " class="input" id="email" name="" placeholder="Email" required="true"><br><br>
+              <input type="text"class="input" id="reason" name="" placeholder="Reason for contacting"><br><br>
+              <button class="btn btn-primary" id="submit" value="submit">Submit</button>
+            </form>
+           </div>
+         </div>
+       </footer>
+        
+      </div>
+      <script>
+      
+        // var name = document.getElementById("fname");
+        // var lname = document.getElementById("lname");
+        // var email = document.getElementById("email");
+        // var reason = document.getElementById("reason");
+     var alerts = document.getElementById("submit");
+     var box = alerts.onSubmit(function(){
+       alert("the");
+     });
+     console.log(box);
+    </script>
+    </body>
+</html>
